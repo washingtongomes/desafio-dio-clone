@@ -7,8 +7,6 @@ import bannerImage from '../../assets/banner.png';
 import { Container, TextContent, Title,TitleHightLight} from './styles' 
 
 
-
-
 const Home = () => {
 
   const navigate = useNavigate();
