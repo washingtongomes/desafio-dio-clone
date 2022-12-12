@@ -74,7 +74,7 @@ const Login = () => {
         </Column>
         <Column>
           <Wrapper>
-            <TitleLogin> Faça seu cadastro </TitleLogin>
+            <TitleLogin> Faça seu Login ou Cadastre-se </TitleLogin>
             <SubTitleLogin> Faça seu login </SubTitleLogin>
 
             <form onSubmit={handleSubmit(onSubmit)}>
