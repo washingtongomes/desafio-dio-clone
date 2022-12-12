@@ -16,6 +16,8 @@
 
 ![preview](./.github/preview.png)
 
+![preview](./.github/preview03.png)
+
 
 [Clique aqui para acessar o site](https://washingtongomes.github.io/desafio-dio-clone/)
 
