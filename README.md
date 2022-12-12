@@ -10,9 +10,11 @@
     > Git & GitHub
     > JavaScript
 
-![preview](./.github/preview.png)
+![preview](./.github/preview02.png)
 
 ![preview](./.github/preview01.png)
+
+![preview](./.github/preview.png)
 
 
 [Clique aqui para acessar o site](https://washingtongomes.github.io/desafio-dio-clone/)
