@@ -63,16 +63,16 @@ export const MenuRight = styled.a`
     font-size: 12px;
     line-height: 25px;
     color: #FFFFFF;
-    margin-right: 15px;
+    margin-right: -355px;
     text-decoration: none;
 
 `
 
 export const UserPicture = styled.img`
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     border-radius: 22px;
-    border: 2px solid #FFFFFF;
+    border: 3px solid yellowgreen;
 `
 
 export const Input = styled.input`

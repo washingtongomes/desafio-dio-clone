@@ -1,6 +1,9 @@
 import React from "react";
 import { Button } from "../../components/Button";
 import logo from "../../assets/logo-dio.png";
+import { useNavigate } from "react-router-dom";
+
+
 import {
   BuscarInputContainer,
   Container,
@@ -13,6 +16,18 @@ import {
 } from "./styles";
 
 const Header = (autenticado) => {
+
+  const navigateLogin = useNavigate();
+  const handleClickSignInLogin = () => {
+      navigateLogin('/login')
+  };
+  const navigateCadastro = useNavigate();
+
+  const handleClickSignInCadastro = () => {
+    navigateCadastro('/cadastro')
+  }
+
+
   return (
     <Wrapper>
       <Container>
@@ -24,24 +39,27 @@ const Header = (autenticado) => {
               <BuscarInputContainer>
                 <Input placeholder="Buscar..." />
               </BuscarInputContainer>
+
               <Menu> Live Code</Menu>
-              <Menu> Global</Menu>{" "}
+              <Menu> Global</Menu>{""}
             </>
-          ) : null}
+          ): null}
         </Row>
         <Row>
           {autenticado ? (
             <UserPicture src="https://avatars.githubusercontent.com/u/68349833?v=4"/>
-          ) : (
+            ): null}
+            
          <>
-          <MenuRight href="#"> Home </MenuRight>
-          <Button title="Entrar" />
-          <Button title="Cadastrar" />
+          <MenuRight href="#"></MenuRight>
+          <Button title="Entrar" onClick={handleClickSignInLogin} />
+          <Button title="Cadastrar" onClick={handleClickSignInCadastro}  />
           </>
-        ) }
+        
         </Row>
       </Container>
     </Wrapper>
   )
 }
-export { Header };
+
+export {Header};
